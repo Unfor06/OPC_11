@@ -22,8 +22,16 @@
 
         Before you begin, please ensure you have this installed globally. 
 
+    * ENVIRONEMENT VIRTUEL
+    source /home/komlan/Bureau/Python/p11_openclassroom/env/bin/activate
+
+    * ACTIVATION ENVIRONEMENT VIRTUEL
+    source env/bin/activate
 
 3. Installation
+
+    - INSTALLER requirement.txt
+    pip install requirement.txt
 
     - After cloning, change into the directory and type <code>virtualenv .</code>. This will then set up a a virtual python environment within that directory.
 
@@ -34,6 +42,10 @@
     - Flask requires that you set an environmental variable to the python file. However you do that, you'll want to set the file to be <code>server.py</code>. Check [here](https://flask.palletsprojects.com/en/1.1.x/quickstart/#a-minimal-application) for more details
 
     - You should now be ready to test the application. In the directory, type either <code>flask run</code> or <code>python -m flask run</code>. The app should respond with an address you should be able to go to using your browser.
+  
+    - LANCER LE SERVEUR
+    export FLASK_APP=serveur.py
+    python3 -m flask run
 
 4. Current Setup
 
@@ -43,6 +55,13 @@
     * clubs.json - list of clubs with relevant information. You can look here to see what email addresses the app will accept for login.
 
 5. Testing
+    module use: unittest
+
+    ```bash
+    python3 test_unitaire.py -v
+    python3 test_integration.py -v
+
+    ```
 
     You are free to use whatever testing framework you like-the main thing is that you can show what tests you are using.
 
